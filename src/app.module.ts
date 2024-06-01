@@ -6,10 +6,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 
 // controllers
-import { AppController } from './app.controller';
+// import { AppController } from './app.controller';
 
 // services
-import { AppService } from './app.service';
+// import { AppService } from './app.service';
+import { UserModule } from './users/user.module';
 
 @Module({
     imports: [
@@ -24,10 +25,11 @@ import { AppService } from './app.service';
             username: process.env.DB_USERNAME,
             port: Number(process.env.DB_PORT),
             entities: [`${__dirname}/**/*.entity{.js,.ts}`],
-            synchronize: true,
+            synchronize: false,
         }),
+        UserModule,
     ],
-    controllers: [AppController],
-    providers: [AppService],
+    controllers: [],
+    providers: [],
 })
 export class AppModule {}
