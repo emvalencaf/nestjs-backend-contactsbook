@@ -10,6 +10,7 @@ import { AuthModule } from './auth/auth.module';
 // guards
 import { AuthGuard } from './guards/auth.guard';
 import { JwtModule } from '@nestjs/jwt';
+import { ContactModule } from './contacts/contact.module';
 
 @Module({
     imports: [
@@ -27,6 +28,7 @@ import { JwtModule } from '@nestjs/jwt';
             synchronize: false,
         }),
         UserModule,
+        ContactModule,
         AuthModule,
         JwtModule,
     ],

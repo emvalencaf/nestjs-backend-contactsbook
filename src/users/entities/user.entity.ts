@@ -1,6 +1,13 @@
 // decorators
-import { Column, Entity, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
+import {
+    Column,
+    Entity,
+    OneToMany,
+    OneToOne,
+    PrimaryGeneratedColumn,
+} from 'typeorm';
 import { UserProfileEntity } from './user-profile.entity';
+import { ContactEntity } from '../../contacts/entities/contact.entity';
 
 @Entity({ name: 'users' })
 export class UserEntity {
@@ -30,4 +37,9 @@ export class UserEntity {
         cascade: true,
     })
     profile: UserProfileEntity;
+
+    @OneToMany(() => ContactEntity, (contact) => contact.user, {
+        cascade: true,
+    })
+    contacts: ContactEntity[];
 }
