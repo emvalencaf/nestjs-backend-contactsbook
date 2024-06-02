@@ -38,33 +38,24 @@ export class UserService {
     }
 
     // create an user
-    async create(user: CreateUserDTO): Promise<string> {
-        try {
-            // encripty password
-            const salt = 10;
+    async create(user: CreateUserDTO) {
+        // encripty password
+        const salt = 10;
 
-            user.password = await hash(user.password, salt);
+        user.password = await hash(user.password, salt);
 
-            const queryRunner = this.dataSourceRepository.createQueryRunner();
-            const queryResult = await queryRunner.query(
-                'CALL insert_new_user(?, ?, ?, ?, ?, ?)',
-                [
-                    user.firstName,
-                    user.lastName,
-                    user.birthday,
-                    user.username,
-                    user.password,
-                    user.email,
-                ],
-            );
-
-            console.log('[server]: user created!');
-
-            return queryResult;
-        } catch (err) {
-            console.log(err);
-            return err?.driverError?.sqlMessage;
-        }
+        const queryRunner = this.dataSourceRepository.createQueryRunner();
+        return await queryRunner.query(
+            'CALL insert_new_user(?, ?, ?, ?, ?, ?)',
+            [
+                user.firstName,
+                user.lastName,
+                user.birthday,
+                user.username,
+                user.password,
+                user.email,
+            ],
+        );
     }
 
     // get an user by id
