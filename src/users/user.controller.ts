@@ -20,11 +20,17 @@ import { UpdateResult } from 'typeorm';
 // services
 import { UserService } from './user.service';
 
+// entities
+import { UserEntity } from './entities/user.entity';
+import { UserProfileEntity } from './entities/user-profile.entity';
+import { Public } from '../decorators/isPublic.decorator';
+
 @Controller('users')
 export class UserController {
     constructor(private readonly userService: UserService) {}
 
     // create an user
+    @Public()
     @UsePipes(ValidationPipe)
     @Post()
     async create(@Body() user: CreateUserDTO): Promise<object> {
@@ -35,9 +41,11 @@ export class UserController {
         };
     }
 
-    @Get()
-    async get() {
-        return 'Testando!';
+    @Get('/:userId')
+    async getById(
+        @Param('userId') userId: number,
+    ): Promise<UserEntity | UserProfileEntity> {
+        return this.userService.getById(userId);
     }
 
     // update profile
