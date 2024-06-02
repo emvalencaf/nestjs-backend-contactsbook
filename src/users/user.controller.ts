@@ -23,7 +23,7 @@ import { UserService } from './user.service';
 // entities
 import { UserEntity } from './entities/user.entity';
 import { UserProfileEntity } from './entities/user-profile.entity';
-import { Public } from '../decorators/isPublic.decorator';
+import { Public } from '../decorators/public.decorator';
 
 @Controller('users')
 export class UserController {
