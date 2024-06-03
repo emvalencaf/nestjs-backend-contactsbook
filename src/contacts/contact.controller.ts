@@ -56,6 +56,7 @@ export class ContactController {
     @Get()
     async getAllContactsFromUser(@UserId() userId: number) {
         try {
+            console.log(userId);
             const contacts =
                 await this.contactService.getAllContactsFromUser(userId);
 
@@ -65,6 +66,11 @@ export class ContactController {
                     message: 'No contacts was found it.',
                     statusCode: 404,
                 };
+            return {
+                result: contacts,
+                message: 'Contacts fetched.',
+                statusCode: 200,
+            };
         } catch (err) {
             return {
                 message: err?.driverError?.sqlMessage || 'Internal Error',

@@ -52,8 +52,6 @@ export class ContactService {
             ],
         );
 
-        console.log('[server]: user created!');
-
         return queryResult;
     }
 

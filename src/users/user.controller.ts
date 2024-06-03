@@ -47,7 +47,7 @@ export class UserController {
     @Get('/:userId')
     async getById(@Param('userId') userId: number) {
         try {
-            const user = this.userService.getById(userId);
+            const user = await this.userService.getById(userId);
 
             if (!user)
                 return {

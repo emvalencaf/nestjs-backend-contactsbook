@@ -92,7 +92,7 @@ export class UserService {
         userId: number,
         profile: UpdateUserProfileDTO,
     ): Promise<UpdateResult> {
-        return this.userProfileRepository.update(userId, {
+        return await this.userProfileRepository.update(userId, {
             ...profile,
         });
     }
