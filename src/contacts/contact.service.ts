@@ -61,10 +61,13 @@ export class ContactService {
         contactId: number,
         contact: UpdateContactDTO,
     ) {
-        return this.contactRepository.update(
+        await this.contactRepository.update(
             { id: contactId, user: { id: userId } },
             { ...contact },
         );
+        return this.contactRepository.findOne({
+            where: { id: contactId, user: { id: userId } },
+        });
     }
 
     // delete a contact

@@ -22,7 +22,14 @@ export class AuthController {
     @Post()
     async signIn(
         @Body() signIn: AuthSignInDTO,
-    ): Promise<ReturnedAuthSignInDTO> {
-        return this.authService.signIn(signIn);
+    ): Promise<ReturnedAuthSignInDTO | { result: any; statusCode: any }> {
+        try {
+            return this.authService.signIn(signIn);
+        } catch (err) {
+            return {
+                result: err,
+                statusCode: err,
+            };
+        }
     }
 }
