@@ -1,0 +1,902 @@
+{
+	"info": {
+		"_postman_id": "873f53e7-5930-40f5-b62a-2d5c413e92cc",
+		"name": "API Contact Book",
+		"description": "# 📖 Overview of the ContactBook API Project / Visão Geral do Projeto API ContactBook\n\n## 📑 Summary / Sumário\n\n- [📚 English Documentation / Documentação em Inglês](#-english-documentation)\n    \n    - [🚀 Key Features](#-key-features)\n        \n        - [🔐 User Registration and Authentication](#-user-registration-and-authentication)\n            \n        - [👤 User Profile Management](#-user-profile-management)\n            \n        - [📇 Contact Management (CRUD Operations)](#-contact-management-crud-operations)\n            \n        - [📞 Phone Management for Contacts](#-phone-management-for-contacts)\n            \n    - [💻 Technology Stack](#-technology-stack)\n        \n    - [📈 Use Cases](#-use-cases)\n        \n    - [🏁 Conclusion](#-conclusion)\n        \n- [📚 Documentação em Português](#-documentação-em-português)\n    \n    - [🚀 Principais Funcionalidades](#-principais-funcionalidades)\n        \n        - [🔐 Registro e Autenticação de Usuário](#-registro-e-autenticação-de-usuário)\n            \n        - [👤 Gerenciamento de Perfil de Usuário](#-gerenciamento-de-perfil-de-usuário)\n            \n        - [📇 Gerenciamento de Contatos (Operações CRUD)](#-gerenciamento-de-contatos-operações-crud)\n            \n        - [📞 Gerenciamento de Telefones dos Contatos](#-gerenciamento-de-telefones-dos-contatos)\n            \n    - [💻 Stack Tecnológico](#-stack-tecnológico)\n        \n    - [📈 Casos de Uso](#-casos-de-uso)\n        \n    - [🏁 Conclusão](#-conclusão)\n        \n\n## 📚 English Documentation\n\n### 🚀 Key Features\n\n#### 🔐 User Registration and Authentication\n\n- **User Registration:** The API allows for the creation of new users. This involves submitting user details to register them into the system.\n    \n- **User Login:** Registered users can log in to the system using their credentials.\n    \n\n#### 👤 User Profile Management\n\n- **Profile Update:** Once logged in, users can update their profiles with new information.\n    \n\n#### 📇 Contact Management (CRUD Operations)\n\n- **Create:** Users can add new contacts to their contact list. Each contact can have up to three phone numbers.\n    \n- **Read:** Users can retrieve a list of all their contacts or view details of a specific contact.\n    \n- **Update:** Users can update the information of their existing contacts.\n    \n- **Delete:** Users can remove contacts from their contact list.\n    \n\n#### 📞 Phone Management for Contacts\n\n- **Add Phone:** Users can add new phone numbers to an existing contact (up to three phone numbers per contact).\n    \n- **Read Phones:** Users can retrieve a list of all phone numbers associated with a specific contact.\n    \n- **Update Phone:** Users can update the details of a phone number associated with a contact.\n    \n- **Delete Phone:** Users can remove a phone number from a contact.\n    \n\n### 💻 Technology Stack\n\nThe ContactBook API is built using the following technologies:\n\n- **Node.js:** JavaScript runtime used for building the backend server.\n    \n- **NestJS:** A progressive Node.js framework for building efficient and scalable server-side applications.\n    \n- **TypeORM:** An ORM (Object-Relational Mapper) for TypeScript and JavaScript, used for database interactions.\n    \n- **MySQL:** A relational database management system used to store user and contact data.\n    \n\n### 📈 Use Cases\n\n- **Personal Use:** Individuals can manage their personal contacts, ensuring all their contact information is organized and easily accessible.\n    \n- **Small Businesses:** Small business owners can use the API to maintain a list of clients or partners, helping streamline communication.\n    \n- **Educational Purposes:** This project serves as an excellent learning tool for understanding backend development concepts, including authentication, CRUD operations, and RESTful API design.\n    \n\n### 🏁 Conclusion\n\nThe ContactBook API is a comprehensive solution for managing user profiles and contact information, including detailed management of contact phone numbers. Its development as a course requirement highlights its educational value, while its practical applications demonstrate its utility in real-world scenarios.\n\n## 📚 Documentação em Português\n\n### 🚀 Principais Funcionalidades\n\n#### 🔐 Registro e Autenticação de Usuário\n\n- **Registro de Usuário:** A API permite a criação de novos usuários. Isso envolve o envio de detalhes do usuário para registrá-los no sistema.\n    \n- **Login de Usuário:** Usuários registrados podem fazer login no sistema usando suas credenciais.\n    \n\n#### 👤 Gerenciamento de Perfil de Usuário\n\n- **Atualização de Perfil:** Uma vez logado, o usuário pode atualizar seu perfil com novas informações.\n    \n\n#### 📇 Gerenciamento de Contatos (Operações CRUD)\n\n- **Criar:** Usuários podem adicionar novos contatos à sua lista de contatos. Cada contato pode ter até três números de telefone.\n    \n- **Ler:** Usuários podem recuperar uma lista de todos os seus contatos ou visualizar os detalhes de um contato específico.\n    \n- **Atualizar:** Usuários podem atualizar as informações de seus contatos existentes.\n    \n- **Deletar:** Usuários podem remover contatos de sua lista de contatos.\n    \n\n#### 📞 Gerenciamento de Telefones dos Contatos\n\n- **Adicionar Telefone:** Usuários podem adicionar novos números de telefone a um contato existente (até três números de telefone por contato).\n    \n- **Ler Telefones:** Usuários podem recuperar uma lista de todos os números de telefone associados a um contato específico.\n    \n- **Atualizar Telefone:** Usuários podem atualizar os detalhes de um número de telefone associado a um contato.\n    \n- **Deletar Telefone:** Usuários podem remover um número de telefone de um contato.\n    \n\n### 💻 Stack\n\nA API ContactBook é construída usando as seguintes tecnologias:\n\n- **Node.js:** Runtime JavaScript utilizado para construir o servidor backend.\n    \n- **NestJS:** Um framework Node.js progressivo para construir aplicações server-side eficientes e escaláveis.\n    \n- **TypeORM:** Um ORM (Object-Relational Mapper) para TypeScript e JavaScript, usado para interações com o banco de dados.\n    \n- **MySQL:** Um sistema de gerenciamento de banco de dados relacional usado para armazenar dados de usuários e contatos.\n    \n\n### 📈 Casos de Uso\n\n- **Uso Pessoal:** Indivíduos podem gerenciar seus contatos pessoais, garantindo que todas as suas informações de contato estejam organizadas e facilmente acessíveis.\n    \n- **Pequenas Empresas:** Proprietários de pequenas empresas podem usar a API para manter uma lista de clientes ou parceiros, ajudando a simplificar a comunicação.\n    \n- **Propósitos Educacionais:** Este projeto serve como uma excelente ferramenta de aprendizado para entender conceitos de desenvolvimento backend, incluindo autenticação, operações CRUD e design de API RESTful.\n    \n\n### 🏁 Conclusão\n\nA API ContactBook é uma solução abrangente para gerenciar perfis de usuários e informações de contatos, incluindo o gerenciamento detalhado de números de telefone dos contatos. Seu desenvolvimento como um requisito de curso destaca seu valor educacional, enquanto suas aplicações práticas demonstram sua utilidade em cenários do mundo real.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21997570"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create an user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Anthony\",\r\n    \"lastName\":\"O'Charle\",\r\n    \"birthday\":\"1970-04-01\",\r\n    \"username\":\"aocharle30\",\r\n    \"email\":\"aocharle30@gmail.com\",\r\n    \"password\":\"B0mD!@,Pr!nc3ssa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": [
+						{
+							"name": "Create an user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\":\"Anthony\",\r\n    \"lastName\":\"O'Charle\",\r\n    \"birthday\":\"1970-04-01\",\r\n    \"username\":\"aocharle30\",\r\n    \"email\":\"aocharle30@gmail.com\",\r\n    \"password\":\"123456OlAMS@#$10da\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"result\": {\n        \"id\": 1,\n        \"username\": \"aocharle30\",\n        \"email\": \"aocharle30@gmail.com\",\n        \"profile\": {\n            \"firstName\": \"Anthony\",\n            \"lastName\": \"O'Charle\",\n            \"birthday\": \"1970-04-01T03:00:00.000Z\"\n        }\n    },\n    \"message\": \"Created user.\",\n    \"statusCode\": 201\n}"
+						}
+					]
+				},
+				{
+					"name": "Update an user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3MzAxMDE1LCJleHAiOjE3MTc5MDU4MTV9.3Y_JEXyW9xUTpdgRQFju5Eck_UlVSOPehSruTXAe7oQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lastName\": \"O'Charles\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/profile/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"profile",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update an user",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"lastName\": \"de Carlo Silva\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/profile/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"profile",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get an user by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNzE3MjkyMzkzLCJleHAiOjE3MTc4OTcxOTN9.9PXRNP6PTZf6t1zZdsVP0ZtqjsYxkBsBNUJCn7ZR3Qk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get an user by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/users/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"result\": {\r\n        \"username\": \"aocharle30\",\r\n        \"email\": \"aocharle30@gmail.com\"\r\n    },\r\n    \"message\": \"fetched an user\",\r\n    \"statusCode\": 200\r\n}"
+						}
+					]
+				}
+			],
+			"description": "An endpoint"
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Sign in an user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"aocharle30\",\r\n    \"password\":\"B0mD!@,Pr!nc3ssa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sign in an user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"aocharle30\",\r\n    \"password\":\"123456OlAMS@#$10da\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3Mzc5MzIxLCJleHAiOjE3MTc5ODQxMjF9.ElrsAtjNca47dQHPJaqsXu1gQXFZKruRCXT9omLo4lk\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Phone",
+					"item": [
+						{
+							"name": "Create a new contact's phone",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3MzAxMDE1LCJleHAiOjE3MTc5MDU4MTV9.3Y_JEXyW9xUTpdgRQFju5Eck_UlVSOPehSruTXAe7oQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"number\": \"123456789\",\r\n    \"codeArea\": \"42\",\r\n    \"isWhatsapp\": true,\r\n    \"isTelegram\": false\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/contacts/1/phones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"contacts",
+										"1",
+										"phones"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a new contact's phone",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"number\": \"123456789\",\r\n    \"codeArea\": \"12\",\r\n    \"isWhatsapp\": true,\r\n    \"isTelegram\": false\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/contacts/1/phones",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"contacts",
+												"1",
+												"phones"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"result\": {\r\n        \"number\": \"123456789\",\r\n        \"codeArea\": \"42\",\r\n        \"isWhatsapp\": true,\r\n        \"isTelegram\": false,\r\n        \"contact\": {\r\n            \"id\": 1,\r\n            \"firstName\": \"John\",\r\n            \"lastName\": \"Doe\",\r\n            \"email\": \"j0hn.22d2oe@example.com\",\r\n            \"birthday\": \"1990-01-01\",\r\n            \"isFavorite\": true,\r\n            \"user\": {\r\n                \"id\": 1,\r\n                \"username\": \"aocharle30\",\r\n                \"password\": \"$2b$10$q09HIWUBWaHgeYAfX73oVu1fwGosbcf7Ut46sszfAR07zE1/snDOS\",\r\n                \"email\": \"aocharle30@gmail.com\"\r\n            }\r\n        },\r\n        \"id\": 3\r\n    },\r\n    \"message\": \"Created phone.\",\r\n    \"status\": 201\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Update a contact's phone",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3MzAxMDE1LCJleHAiOjE3MTc5MDU4MTV9.3Y_JEXyW9xUTpdgRQFju5Eck_UlVSOPehSruTXAe7oQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isTelegram\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/contacts/1/phones/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"contacts",
+										"1",
+										"phones",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update a contact's phone",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"isTelegram\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/contacts/1/phone/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"contacts",
+												"1",
+												"phone",
+												"1"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"result\": {\r\n        \"generatedMaps\": [],\r\n        \"raw\": [],\r\n        \"affected\": 1\r\n    },\r\n    \"message\": \"Phone updated\",\r\n    \"statusCode\": 200\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete a contact's phone",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3MzAxMDE1LCJleHAiOjE3MTc5MDU4MTV9.3Y_JEXyW9xUTpdgRQFju5Eck_UlVSOPehSruTXAe7oQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/contacts/1/phones/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"contacts",
+										"1",
+										"phones",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete a contact's phone",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/contacts/1/phones/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"contacts",
+												"1",
+												"phones",
+												"1"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"result\": {\r\n        \"raw\": [],\r\n        \"affected\": 1\r\n    },\r\n    \"message\": \"Phone was deleted.\",\r\n    \"statusCode\": 200\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Get all contact's phones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/contacts/1/phones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"contacts",
+										"1",
+										"phones"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all contact's phones",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/contacts/1/phones",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"contacts",
+												"1",
+												"phones"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"result\": [\r\n        {\r\n            \"id\": 2,\r\n            \"number\": \"123456789\",\r\n            \"codeArea\": \"26\",\r\n            \"isWhatsapp\": null,\r\n            \"isTelegram\": true\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"number\": \"123456789\",\r\n            \"codeArea\": \"42\",\r\n            \"isWhatsapp\": true,\r\n            \"isTelegram\": false\r\n        }\r\n    ],\r\n    \"statusCode\": 200\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Create a new user's contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3MzAxMDE1LCJleHAiOjE3MTc5MDU4MTV9.3Y_JEXyW9xUTpdgRQFju5Eck_UlVSOPehSruTXAe7oQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Doe\",\r\n    \"email\": \"j0hn.22d2oe@example.com\",\r\n    \"birthday\": \"1990-01-01\",\r\n    \"isFavorite\": true,\r\n    \"phones\": [\r\n        {\r\n            \"number\": \"982654321\",\r\n            \"codeArea\": \"15\",\r\n            \"isWhatsapp\": true,\r\n            \"isTelegram\": false\r\n        },\r\n        {\r\n            \"number\": \"123456789\",\r\n            \"codeArea\": \"26\",\r\n            \"isWhatsapp\": false,\r\n            \"isTelegram\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/contacts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create a new contact",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlhdCI6MTcxNzI5OTEyMSwiZXhwIjoxNzE3OTAzOTIxfQ.PFOsTc7vfG2sCA7Pr87nH6EINJ4IZgl-4mSDWa1fxRI"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Doe\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"birthday\": \"1990-01-01\",\r\n    \"isFavorite\": true,\r\n    \"phones\": [\r\n        {\r\n            \"number\": \"987654321\",\r\n            \"codeArea\": \"21\",\r\n            \"isWhatsapp\": true,\r\n            \"isTelegram\": false\r\n        },\r\n        {\r\n            \"number\": \"123456789\",\r\n            \"codeArea\": \"11\",\r\n            \"isWhatsapp\": false,\r\n            \"isTelegram\": true\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/contacts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"contacts"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"statusCode\": 200,\r\n    \"result\": {\r\n        \"firstName\": \"John\",\r\n        \"lastName\": \"Doe\",\r\n        \"birthday\": \"1990-01-01T02:00:00.000Z\",\r\n        \"email\": \"j0hn.22d2oe@example.com\",\r\n        \"isFavorite\": true,\r\n        \"phones\": [\r\n            {\r\n                \"id\": 1,\r\n                \"number\": \"982654321\",\r\n                \"codeArea\": \"15\",\r\n                \"isWhatsapp\": true,\r\n                \"isTelegram\": false\r\n            },\r\n            {\r\n                \"id\": 2,\r\n                \"number\": \"123456789\",\r\n                \"codeArea\": \"26\",\r\n                \"isWhatsapp\": false,\r\n                \"isTelegram\": true\r\n            }\r\n        ]\r\n    },\r\n    \"message\": \"Created contact.\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all user's contacts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3Mzc5MzIxLCJleHAiOjE3MTc5ODQxMjF9.ElrsAtjNca47dQHPJaqsXu1gQXFZKruRCXT9omLo4lk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/contacts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all user's contacts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/contacts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"contacts"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"result\": [\r\n        {\r\n            \"id\": 1,\r\n            \"firstName\": \"John\",\r\n            \"lastName\": \"Doe\",\r\n            \"email\": \"j0hn.22d2oe@example.com\",\r\n            \"birthday\": \"1990-01-01\",\r\n            \"isFavorite\": true,\r\n            \"phones\": [\r\n                {\r\n                    \"id\": 2,\r\n                    \"number\": \"123456789\",\r\n                    \"codeArea\": \"26\",\r\n                    \"isWhatsapp\": null,\r\n                    \"isTelegram\": true\r\n                },\r\n                {\r\n                    \"id\": 1,\r\n                    \"number\": \"982654321\",\r\n                    \"codeArea\": \"15\",\r\n                    \"isWhatsapp\": true,\r\n                    \"isTelegram\": false\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"message\": \"Contacts fetched.\",\r\n    \"statusCode\": 200\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Patch an user's contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3Mzc5MzIxLCJleHAiOjE3MTc5ODQxMjF9.ElrsAtjNca47dQHPJaqsXu1gQXFZKruRCXT9omLo4lk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isFavorite\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/contacts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"contacts",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Patch an user's contact",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isFavorite\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"result\": {\r\n        \"generatedMaps\": [],\r\n        \"raw\": [],\r\n        \"affected\": 1\r\n    },\r\n    \"message\": \"contact was updated.\",\r\n    \"statusCode\": 200\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Patch an user's contact and phone",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE3Mzc5MzIxLCJleHAiOjE3MTc5ODQxMjF9.ElrsAtjNca47dQHPJaqsXu1gQXFZKruRCXT9omLo4lk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isFavorite\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/contacts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"contacts",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Patch an user's contact",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isFavorite\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"result\": {\r\n        \"generatedMaps\": [],\r\n        \"raw\": [],\r\n        \"affected\": 1\r\n    },\r\n    \"message\": \"contact was updated.\",\r\n    \"statusCode\": 200\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete an user's contact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "Delete an user's contact",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/contacts/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"contacts",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"raw\": [],\r\n    \"affected\": 1\r\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-API-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://farming-simulator.pstmn.io"
+		}
+	]
+}
