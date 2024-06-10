@@ -16,9 +16,9 @@ import { AuthService } from './auth.service';
         UserModule,
         JwtModule.registerAsync({
             useFactory: () => ({
-                secret: process.env.JWT_SECRET || 'default_secret',
+                secret: process.env.NESTJS_APP_JWT_SECRET || 'default_secret',
                 signOptions: {
-                    expiresIn: process.env.JWT_EXPIRES_IN || '3600s',
+                    expiresIn: process.env.NESTJS_APP_JWT_EXPIRES_IN || '3600s',
                 },
             }),
         }),

@@ -15,15 +15,15 @@ import { ContactModule } from './contacts/contact.module';
 @Module({
     imports: [
         ConfigModule.forRoot({
-            envFilePath: ['.env.dev.local'],
+            envFilePath: ['.env'],
         }),
         TypeOrmModule.forRoot({
             type: 'mysql',
-            database: process.env.DB_DATABASE,
-            host: process.env.DB_HOST,
-            password: process.env.DB_PASSWORD,
-            username: process.env.DB_USERNAME,
-            port: Number(process.env.DB_PORT),
+            database: process.env.MYSQLDB_DATABASE,
+            host: process.env.MYSQLDB_HOST,
+            password: process.env.MYSQLDB_PASSWORD,
+            username: process.env.MYSQLDB_USER,
+            port: Number(process.env.MYSQLDB_LOCAL_PORT),
             entities: [`${__dirname}/**/*.entity{.js,.ts}`],
             synchronize: false,
         }),

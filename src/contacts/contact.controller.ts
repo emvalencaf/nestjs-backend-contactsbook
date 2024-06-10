@@ -7,6 +7,7 @@ import {
     Param,
     Patch,
     Post,
+    Query,
     UsePipes,
     ValidationPipe,
 } from '@nestjs/common';
@@ -52,13 +53,49 @@ export class ContactController {
         }
     }
 
+    @Get('/:contactId')
+    async getContactById(
+        @Param('contactId') contactId: number,
+        @UserId() userId: number,
+        @Query('showPhones') showPhones: boolean = true,
+    ) {
+        try {
+            const contact = await this.contactService.getById(
+                contactId,
+                userId,
+                showPhones,
+            );
+            if (!contact)
+                return {
+                    result: [],
+                    message: 'No contact was found it.',
+                    statusCode: 404,
+                };
+            return {
+                result: contact,
+                message: 'Contact fetched.',
+                statusCode: 200,
+            };
+        } catch (err) {
+            return {
+                message: err?.driverError?.sqlMessage || 'Internal Error',
+                statusCode: (err?.driverError?.sqlMessage && 400) || 500,
+            };
+        }
+    }
     // get all user's contacts
     @Get()
-    async getAllContactsFromUser(@UserId() userId: number) {
+    async getAllContactsFromUser(
+        @UserId() userId: number,
+        @Query('showPhones') showPhones: boolean = true,
+        @Query('filterByFavorites') filterByFavorites: boolean = false,
+    ) {
         try {
-            console.log(userId);
-            const contacts =
-                await this.contactService.getAllContactsFromUser(userId);
+            const contacts = await this.contactService.getAllContactsFromUser(
+                userId,
+                showPhones,
+                filterByFavorites,
+            );
 
             if (!contacts)
                 return {

@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 
 // typeorms
-import { DataSource, Repository } from 'typeorm';
+import { DataSource, FindOptionsWhere, Repository } from 'typeorm';
 
 // dtos
 import { CreateContactPhoneDTO } from './dtos/create-contact-phone.dto';
@@ -78,13 +78,39 @@ export class ContactService {
         });
     }
 
+    // get a contact by contact_id
+    async getById(
+        contactId: number,
+        userId: number,
+        showPhones: boolean = true,
+    ): Promise<ContactEntity> {
+        return this.contactRepository.findOne({
+            where: {
+                id: contactId,
+                user: {
+                    id: userId,
+                },
+            },
+            relations: {
+                phones: showPhones,
+            },
+        });
+    }
+
     // get all user's contacts
     async getAllContactsFromUser(
         userId: number,
         showPhones: boolean = true,
+        filterByFavorites: boolean = false,
     ): Promise<ContactEntity[]> {
+        const where: FindOptionsWhere<ContactEntity> = {
+            user: { id: userId },
+        };
+
+        if (filterByFavorites) where.isFavorite = true;
+
         return this.contactRepository.find({
-            where: { user: { id: userId } },
+            where,
             relations: { phones: showPhones },
         });
     }
